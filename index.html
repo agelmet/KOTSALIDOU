@@ -21,9 +21,9 @@
                 extend: {
                     colors: {
                         luxury: {
-                            light: '#d6edec', /* Light cyan/mint from prompt */
-                            blue: '#b1d8eb',  /* Soft blue from prompt */
-                            dark: '#111827',  /* Deep slate/navy for text and dark sections */
+                            light: '#d6edec', /* Light cyan/mint */
+                            blue: '#b1d8eb',  /* Soft blue */
+                            dark: '#111827',  /* Deep slate/navy for text */
                             charcoal: '#1f2937',
                             soft: '#f8fafc'
                         }
@@ -60,9 +60,9 @@
     <style>
         /* Modern Scrollbar */
         ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #f8fafc; }
+        ::-webkit-scrollbar-track { background: #d6edec; }
         ::-webkit-scrollbar-thumb { background: #b1d8eb; border-radius: 4px; }
-        ::-webkit-scrollbar-thumb:hover { background: #d6edec; }
+        ::-webkit-scrollbar-thumb:hover { background: #92c5de; }
 
         /* Typography Refinements */
         .tracking-widest-luxe { letter-spacing: 0.15em; }
@@ -79,38 +79,32 @@
             background: rgba(255, 255, 255, 0.85);
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            border-bottom: 1px solid rgba(214, 237, 236, 0.5);
         }
         
         .glass-card {
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.5);
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.8);
             transition: all 0.5s ease;
         }
         .glass-card:hover {
             background: rgba(255, 255, 255, 0.95);
             transform: translateY(-5px);
-            box-shadow: 0 25px 50px -12px rgba(177, 216, 235, 0.3);
-        }
-
-        /* Image Masking for organic feel */
-        .organic-mask {
-            mask-image: radial-gradient(white, black);
-            -webkit-mask-image: -webkit-radial-gradient(white, black);
+            box-shadow: 0 25px 50px -12px rgba(177, 216, 235, 0.4);
         }
     </style>
 
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body class="bg-luxury-soft text-luxury-dark font-sans antialiased overflow-x-hidden selection:bg-luxury-blue selection:text-luxury-dark">
+<body class="bg-white text-luxury-dark font-sans antialiased overflow-x-hidden selection:bg-luxury-blue selection:text-luxury-dark">
 
     <nav class="fixed w-full z-50 transition-all duration-500 glass-nav" id="navbar">
         <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
             
             <a href="#" class="relative group block">
-                <div class="absolute -inset-2 bg-gradient-to-r from-luxury-light to-luxury-blue rounded-full blur opacity-0 group-hover:opacity-40 transition duration-500"></div>
+                <div class="absolute -inset-2 bg-gradient-to-r from-luxury-light to-luxury-blue rounded-full blur opacity-0 group-hover:opacity-60 transition duration-500"></div>
                 <img src="https://github.com/agelmet/KOTSALIDOU/blob/main/logokotsa.jpg?raw=true" alt="Σοφία Κοτσαλίδου Logo" class="relative h-16 md:h-20 w-auto object-contain shadow-logo rounded-full transform group-hover:scale-105 transition-all duration-500">
             </a>
             
@@ -120,7 +114,7 @@
                 <a href="#services" class="text-sm font-medium uppercase tracking-wider text-luxury-charcoal hover:text-luxury-blue transition-colors duration-300">Υπηρεσίες</a>
                 <a href="#contact" class="text-sm font-medium uppercase tracking-wider text-luxury-charcoal hover:text-luxury-blue transition-colors duration-300">Επικοινωνία</a>
                 
-                <a href="https://www.doctoranytime.gr/d/Psychologos/lamprinou-eua?autobook=1" target="_blank" rel="noopener noreferrer" class="px-8 py-3 bg-luxury-dark text-white rounded-none text-sm font-medium uppercase tracking-widest-luxe hover:bg-luxury-blue hover:text-luxury-dark transition-all duration-500 border border-luxury-dark hover:border-transparent">
+                <a href="https://www.doctoranytime.gr/d/Psychologos/lamprinou-eua?autobook=1" target="_blank" rel="noopener noreferrer" class="px-8 py-3 bg-luxury-blue text-luxury-dark rounded-none text-sm font-medium uppercase tracking-widest-luxe hover:bg-luxury-light hover:text-luxury-dark transition-all duration-500 border border-transparent hover:border-luxury-blue shadow-lg shadow-luxury-blue/30">
                     Κλείστε Ραντεβού
                 </a>
             </div>
@@ -130,12 +124,12 @@
             </button>
         </div>
         
-        <div id="mobile-menu" class="absolute top-full left-0 w-full bg-white/98 backdrop-blur-xl shadow-2xl hidden flex-col items-center py-10 space-y-8 border-t border-luxury-light/30">
+        <div id="mobile-menu" class="absolute top-full left-0 w-full bg-white/98 backdrop-blur-xl shadow-2xl hidden flex-col items-center py-10 space-y-8 border-t border-luxury-light/50">
             <a href="#about" class="text-lg font-medium uppercase tracking-wider mobile-link text-luxury-dark">Σχετικά</a>
             <a href="#approach" class="text-lg font-medium uppercase tracking-wider mobile-link text-luxury-dark">Προσέγγιση</a>
             <a href="#services" class="text-lg font-medium uppercase tracking-wider mobile-link text-luxury-dark">Υπηρεσίες</a>
             <a href="#contact" class="text-lg font-medium uppercase tracking-wider mobile-link text-luxury-dark">Επικοινωνία</a>
-            <a href="https://www.doctoranytime.gr/d/Psychologos/lamprinou-eua?autobook=1" target="_blank" rel="noopener noreferrer" class="px-8 py-4 bg-luxury-dark text-white text-sm font-medium uppercase tracking-widest-luxe w-[80%] text-center mobile-link border border-luxury-dark">
+            <a href="https://www.doctoranytime.gr/d/Psychologos/lamprinou-eua?autobook=1" target="_blank" rel="noopener noreferrer" class="px-8 py-4 bg-luxury-blue text-luxury-dark text-sm font-medium uppercase tracking-widest-luxe w-[80%] text-center mobile-link shadow-lg shadow-luxury-blue/30">
                 Κλείστε Ραντεβού
             </a>
         </div>
@@ -158,7 +152,7 @@
                     Καλώς ήρθατε στον ιστοχώρο μου. Ένα ασφαλές πλαίσιο αποδοχής και φροντίδας για να εξερευνήσετε, να κατανοήσετε και να αναδομήσετε τον εαυτό σας.
                 </p>
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
-                    <a href="https://www.doctoranytime.gr/d/Psychologos/lamprinou-eua?autobook=1" target="_blank" rel="noopener noreferrer" class="px-10 py-4 bg-luxury-light text-luxury-dark rounded-none font-medium uppercase tracking-widest text-sm hover:bg-white transition-all duration-500 shadow-[0_0_30px_rgba(214,237,236,0.3)]">
+                    <a href="https://www.doctoranytime.gr/d/Psychologos/lamprinou-eua?autobook=1" target="_blank" rel="noopener noreferrer" class="px-10 py-4 bg-luxury-blue text-luxury-dark rounded-none font-medium uppercase tracking-widest text-sm hover:bg-luxury-light transition-all duration-500 shadow-[0_0_30px_rgba(177,216,235,0.4)]">
                         Εναρξη Συνεδριων
                     </a>
                     <a href="#about" class="px-10 py-4 border border-luxury-light text-luxury-light rounded-none font-medium uppercase tracking-widest text-sm hover:bg-luxury-light hover:text-luxury-dark transition-all duration-500">
@@ -169,15 +163,16 @@
         </div>
     </section>
 
-    <section id="about" class="py-24 md:py-32 px-6 bg-white relative">
-        <div class="absolute top-0 right-0 w-[40vw] h-[40vw] bg-luxury-light/20 rounded-full blur-3xl -translate-y-1/2 pointer-events-none"></div>
+    <section id="about" class="py-24 md:py-32 px-6 bg-gradient-to-b from-white to-luxury-light/20 relative">
+        <div class="absolute top-0 right-0 w-[40vw] h-[40vw] bg-luxury-blue/20 rounded-full blur-[100px] -translate-y-1/2 pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-[30vw] h-[30vw] bg-luxury-light/40 rounded-full blur-[100px] pointer-events-none"></div>
 
         <div class="max-w-7xl mx-auto">
-            <div class="grid lg:grid-cols-12 gap-16 items-start relative">
+            <div class="grid lg:grid-cols-12 gap-16 items-start relative z-10">
                 
                 <div class="lg:col-span-5 lg:sticky top-32 h-[60vh] lg:h-[75vh] w-full reveal relative group">
-                    <div class="absolute -inset-4 bg-gradient-to-tr from-luxury-light to-luxury-blue opacity-20 blur-xl group-hover:opacity-40 transition duration-700"></div>
-                    <img src="https://github.com/agelmet/KOTSALIDOU/blob/main/438102272_122117735636267416_1475123997204953088_n.jpg?raw=true" alt="Σοφία Κοτσαλίδου Portrait" class="w-full h-full object-cover object-top shadow-card relative z-10 grayscale-[20%] group-hover:grayscale-0 transition-all duration-1000">
+                    <div class="absolute -inset-4 bg-gradient-to-tr from-luxury-light to-luxury-blue opacity-30 blur-2xl group-hover:opacity-60 transition duration-700"></div>
+                    <img src="https://github.com/agelmet/KOTSALIDOU/blob/main/438102272_122117735636267416_1475123997204953088_n.jpg?raw=true" alt="Σοφία Κοτσαλίδου Portrait" class="w-full h-full object-cover object-top shadow-card relative z-10 grayscale-[20%] group-hover:grayscale-0 transition-all duration-1000 border border-white">
                 </div>
 
                 <div class="lg:col-span-7 py-8 lg:py-16 space-y-10">
@@ -185,7 +180,7 @@
                         <span class="text-luxury-blue font-semibold tracking-widest-luxe text-sm uppercase">Λιγα λογια για εμενα</span>
                         <h2 class="text-4xl md:text-5xl font-serif text-luxury-dark mt-4 mb-8">Εξερευνώντας τα βάθη του εαυτού.</h2>
                         
-                        <div class="space-y-6 text-gray-600 font-light leading-relaxed text-lg">
+                        <div class="space-y-6 text-luxury-charcoal font-light leading-relaxed text-lg">
                             <p>
                                 Είμαι η <strong>Σοφία Κοτσαλίδου</strong>, είμαι ψυχολόγος - ψυχοθεραπεύτρια, ζω και εργάζομαι στην Αθήνα και είμαι μητέρα δυο παιδιών. Είμαι απόφοιτη του τμήματος Ψυχολογίας του Πάντειου Πανεπιστημίου (BSc) στη διάρκεια του οποίου ολοκλήρωσα την πρακτική άσκηση στην ΑΜΚΕ Φαιναρέτη. Έχω άδεια ασκήσεως επαγγέλματος και είμαι τακτικό μέλος του ΣΕΨ (Συλλόγου Ελλήνων Ψυχολόγων).
                             </p>
@@ -199,8 +194,8 @@
                     </div>
 
                     <div class="reveal">
-                        <div class="p-8 border-l-2 border-luxury-blue bg-luxury-soft">
-                            <p class="text-gray-600 font-light leading-relaxed text-lg italic">
+                        <div class="p-8 border-l-4 border-luxury-blue bg-white/60 shadow-sm backdrop-blur-md">
+                            <p class="text-luxury-charcoal font-light leading-relaxed text-lg italic">
                                 "Οι εμπειρίες με δίδαξαν τη σημαντικότητα της δια βίου εκπαίδευσης και της συνεχούς προσωπικής αυτογνωστικής εργασίας από την πλευρά του θεραπευτή για να επιφέρει η ψυχοθεραπεία αποτελέσματα."
                             </p>
                         </div>
@@ -208,7 +203,7 @@
 
                     <div class="reveal">
                         <h3 class="text-2xl font-serif text-luxury-dark mb-4">Το Ασφαλές Πλαίσιο</h3>
-                        <div class="space-y-6 text-gray-600 font-light leading-relaxed text-lg">
+                        <div class="space-y-6 text-luxury-charcoal font-light leading-relaxed text-lg">
                             <p>
                                 Οι εξυπηρετούμενοι/ες θα έχουν την ευκαιρία να μιλήσουν για ένα πρόβλημα ή/και για συναισθηματικές δυσκολίες που τους απασχολούν σε ένα πλαίσιο αποδοχής, ασφάλειας, ενδιαφέροντος, εχεμύθειας, φροντίδας και με σεβασμό στη μοναδικότητα του κάθε ατόμου. Στόχος είναι να κατανοήσουν καλύτερα την επίδραση του προβλήματος στην καθημερινή τους ζωή και να επαναπροσδιορίσουν τη σχέση τους με αυτό.
                             </p>
@@ -223,27 +218,27 @@
         </div>
     </section>
 
-    <section id="approach" class="py-24 px-6 bg-luxury-dark text-white relative overflow-hidden">
-        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-10"></div>
-        <div class="absolute top-1/2 left-0 w-[50vw] h-[50vw] bg-luxury-blue/10 rounded-full blur-[120px] -translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
+    <section id="approach" class="py-24 px-6 bg-gradient-to-br from-luxury-light to-luxury-blue relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-20 mix-blend-multiply"></div>
+        <div class="absolute top-1/2 left-0 w-[50vw] h-[50vw] bg-white/30 rounded-full blur-[120px] -translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
 
         <div class="max-w-7xl mx-auto relative z-10">
             <div class="grid lg:grid-cols-2 gap-16 items-center">
                 
                 <div class="reveal order-2 lg:order-1">
-                    <span class="text-luxury-light font-semibold tracking-widest-luxe text-sm uppercase">Η Φιλοσοφια Μου</span>
-                    <h2 class="text-4xl md:text-5xl font-serif mt-4 mb-8">Συνθετικό Μοντέλο Συστημικής Θεραπείας</h2>
-                    <p class="text-gray-300 font-light leading-relaxed text-lg mb-6">
+                    <span class="text-luxury-dark font-semibold tracking-widest-luxe text-sm uppercase mix-blend-color-burn">Η Φιλοσοφια Μου</span>
+                    <h2 class="text-4xl md:text-5xl font-serif text-luxury-dark mt-4 mb-8 leading-tight">Συνθετικό Μοντέλο Συστημικής Θεραπείας</h2>
+                    <p class="text-luxury-dark/80 font-medium leading-relaxed text-lg mb-6">
                         Στην πρακτική μου εφαρμόζω το Συνθετικό Μοντέλο Συστημικής Θεραπείας, το οποίο προσεγγίζει τον άνθρωπο όχι αποκομμένα, αλλά μέσα από το πρίσμα των σχέσεων και των συστημάτων στα οποία ζει και αλληλεπιδρά (όπως η οικογένεια, η εργασία και το ευρύτερο κοινωνικό περιβάλλον).
                     </p>
-                    <p class="text-gray-300 font-light leading-relaxed text-lg">
+                    <p class="text-luxury-dark/80 font-medium leading-relaxed text-lg">
                         Ενσωματώνοντας ευέλικτα εργαλεία και τεχνικές από διαφορετικές ψυχοθεραπευτικές σχολές, διαμορφώνουμε μαζί μια απόλυτα εξατομικευμένη θεραπευτική πορεία που προσαρμόζεται στις δικές σας, μοναδικές ανάγκες. Αυτή η ολιστική ματιά μάς επιτρέπει να κατανοήσουμε βαθύτερα τα μοτίβα της ζωής σας, να αναδείξουμε τα δυνατά σας σημεία και να επιφέρουμε ουσιαστικές, μακροπρόθεσμες αλλαγές.
                     </p>
                 </div>
 
                 <div class="reveal reveal-delay-1 order-1 lg:order-2 perspective-1000 relative">
-                    <div class="relative w-full max-w-md mx-auto aspect-video animate-float">
-                        <img src="https://github.com/agelmet/KOTSALIDOU/blob/main/karteskotsa.jpg?raw=true" alt="Business Card" class="w-full h-full object-cover shadow-[0_20px_50px_rgba(0,0,0,0.5)] transform rotate-[-2deg] hover:rotate-0 transition-transform duration-700 border border-white/10">
+                    <div class="relative w-full max-w-lg mx-auto animate-float">
+                        <img src="https://github.com/agelmet/KOTSALIDOU/blob/main/karteskotsa.jpg?raw=true" alt="Business Card" class="w-full h-auto object-contain shadow-[0_25px_50px_rgba(17,24,39,0.15)] transform rotate-[-2deg] hover:rotate-0 transition-transform duration-700 rounded-xl">
                     </div>
                 </div>
 
@@ -251,8 +246,8 @@
         </div>
     </section>
 
-    <section id="services" class="py-24 md:py-32 px-6 bg-luxury-soft relative">
-        <div class="max-w-7xl mx-auto">
+    <section id="services" class="py-24 md:py-32 px-6 bg-gradient-to-b from-luxury-light/10 to-luxury-blue/20 relative">
+        <div class="max-w-7xl mx-auto relative z-10">
             <div class="text-center mb-20 reveal">
                 <span class="text-luxury-blue font-semibold tracking-widest-luxe text-sm uppercase">Τομεις Εξειδικευσης</span>
                 <h2 class="text-4xl md:text-5xl font-serif text-luxury-dark mt-4">Υπηρεσίες Ψυχοθεραπείας</h2>
@@ -266,7 +261,7 @@
                         <i data-lucide="cloud-lightning" class="w-6 h-6 stroke-[1.5]"></i>
                     </div>
                     <h3 class="text-2xl font-serif text-luxury-dark mb-4">Άγχος, Φοβίες & Κρίσεις Πανικού</h3>
-                    <p class="text-gray-600 font-light leading-relaxed text-sm">
+                    <p class="text-luxury-charcoal font-light leading-relaxed text-sm">
                         Το έντονο άγχος και οι κρίσεις πανικού μπορούν να περιορίσουν σημαντικά την καθημερινότητά σας. Μέσα από τη διαδικασία, ανακαλύπτουμε τις ρίζες των φοβιών και αναπτύσσουμε πρακτικούς τρόπους διαχείρισης. Στόχος να ανακτήσετε τον έλεγχο και την εμπιστοσύνη στον εαυτό σας.
                     </p>
                 </div>
@@ -276,7 +271,7 @@
                         <i data-lucide="heart-pulse" class="w-6 h-6 stroke-[1.5]"></i>
                     </div>
                     <h3 class="text-2xl font-serif text-luxury-dark mb-4">Κατάθλιψη & Συναισθηματική Αποφόρτιση</h3>
-                    <p class="text-gray-600 font-light leading-relaxed text-sm">
+                    <p class="text-luxury-charcoal font-light leading-relaxed text-sm">
                         Η κατάθλιψη συχνά μοιάζει με σκοτεινό τούνελ. Στο ασφαλές μας περιβάλλον, σας παρέχεται ο χώρος για ουσιαστική συναισθηματική αποφόρτιση. Χτίζουμε σταδιακά τα βήματα για να βρείτε ξανά το νόημα, την ελπίδα και το κίνητρο στη ζωή σας.
                     </p>
                 </div>
@@ -286,7 +281,7 @@
                         <i data-lucide="sparkles" class="w-6 h-6 stroke-[1.5]"></i>
                     </div>
                     <h3 class="text-2xl font-serif text-luxury-dark mb-4">Ενδυνάμωση Αυτοεικόνας</h3>
-                    <p class="text-gray-600 font-light leading-relaxed text-sm">
+                    <p class="text-luxury-charcoal font-light leading-relaxed text-sm">
                         Η σχέση με τον εαυτό μας αποτελεί το θεμέλιο ευημερίας. Εστιάζουμε στην αναγνώριση της προσωπικής σας αξίας και στην αποδοχή όλων των πτυχών σας, καλλιεργώντας μια βαθιά αυτοπεποίθηση για να διεκδικείτε όσα σας αξίζουν.
                     </p>
                 </div>
@@ -296,7 +291,7 @@
                         <i data-lucide="users" class="w-6 h-6 stroke-[1.5]"></i>
                     </div>
                     <h3 class="text-2xl font-serif text-luxury-dark mb-4">Δυσκολίες στις Σχέσεις & την Οικογένεια</h3>
-                    <p class="text-gray-600 font-light leading-relaxed text-sm">
+                    <p class="text-luxury-charcoal font-light leading-relaxed text-sm">
                         Οι οικογενειακές συγκρούσεις αποτελούν πηγή ψυχικού πόνου. Μέσω της συμβουλευτικής, εντοπίζουμε τα δυσλειτουργικά μοτίβα, με σκοπό τη δημιουργία πιο υγιών και αρμονικών δεσμών με κατανόηση.
                     </p>
                 </div>
@@ -306,7 +301,7 @@
                         <i data-lucide="network" class="w-6 h-6 stroke-[1.5]"></i>
                     </div>
                     <h3 class="text-2xl font-serif text-luxury-dark mb-4">Βελτίωση Διαπροσωπικών Σχέσεων</h3>
-                    <p class="text-gray-600 font-light leading-relaxed text-sm">
+                    <p class="text-luxury-charcoal font-light leading-relaxed text-sm">
                         Εστιάζουμε στην ανάπτυξη δεξιοτήτων επικοινωνίας, την υγιή θέσπιση ορίων και την ενσυναίσθηση, είτε στο εργασιακό είτε στο φιλικό περιβάλλον. Στόχος να χτίζετε αυθεντικές, ισότιμες και ικανοποιητικές σχέσεις.
                     </p>
                 </div>
@@ -316,7 +311,7 @@
                         <i data-lucide="compass" class="w-6 h-6 stroke-[1.5]"></i>
                     </div>
                     <h3 class="text-2xl font-serif text-luxury-dark mb-4">Υποστήριξη σε Κρίσεις & Μεταβάσεις</h3>
-                    <p class="text-gray-600 font-light leading-relaxed text-sm">
+                    <p class="text-luxury-charcoal font-light leading-relaxed text-sm">
                         Απώλειες, διαζύγια ή αλλαγές καριέρας κλονίζουν τις ισορροπίες. Παρέχω σταθερή υποστήριξη για διαχείριση στρες και πένθους, ώστε να ανακαλύψετε τις εσωτερικές σας αντοχές και να εξελιχθείτε ομαλά.
                     </p>
                 </div>
@@ -325,7 +320,7 @@
         </div>
     </section>
 
-    <footer id="contact" class="bg-luxury-charcoal text-white pt-24 pb-12 relative border-t-[8px] border-luxury-dark">
+    <footer id="contact" class="bg-luxury-charcoal text-white pt-24 pb-12 relative border-t-[8px] border-luxury-blue">
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid lg:grid-cols-12 gap-16 mb-20">
                 
@@ -334,7 +329,7 @@
                     <p class="text-gray-400 font-light mb-8 max-w-sm leading-relaxed">
                         Το πρώτο βήμα προς την αλλαγή είναι η απόφαση να αναζητήσετε στήριξη. Επικοινωνήστε για να οργανώσουμε την πρώτη μας συνάντηση.
                     </p>
-                    <a href="https://www.doctoranytime.gr/d/Psychologos/lamprinou-eua?autobook=1" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-4 bg-white text-luxury-dark px-6 py-3 font-medium uppercase tracking-widest text-sm hover:bg-luxury-blue hover:text-luxury-dark transition-colors duration-300">
+                    <a href="https://www.doctoranytime.gr/d/Psychologos/lamprinou-eua?autobook=1" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-4 bg-luxury-blue text-luxury-dark px-6 py-3 font-medium uppercase tracking-widest text-sm hover:bg-luxury-light transition-colors duration-300">
                         <img src="https://raw.githubusercontent.com/agelmet/KARAZOLI/refs/heads/main/lgoodoc.jpg" alt="DoctorAnytime" class="h-6">
                         <span>Κλειστε Ραντεβου</span>
                     </a>
@@ -350,6 +345,10 @@
                         <li class="flex items-center gap-4">
                             <i data-lucide="phone" class="w-5 h-5 text-luxury-blue shrink-0"></i>
                             <a href="tel:+306989541266" class="hover:text-white transition-colors text-lg tracking-wide">+30 698 954 1266</a>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <i data-lucide="mail" class="w-5 h-5 text-luxury-blue shrink-0"></i>
+                            <a href="mailto:sofiakotsa@hotmail.com" class="hover:text-white transition-colors text-lg tracking-wide">sofiakotsa@hotmail.com</a>
                         </li>
                         <li class="flex items-center gap-4">
                             <i data-lucide="facebook" class="w-5 h-5 text-luxury-blue shrink-0"></i>
