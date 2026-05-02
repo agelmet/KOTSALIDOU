@@ -7,12 +7,15 @@
     <title>Σοφία Κοτσαλίδου | Ψυχολόγος - Ψυχοθεραπεύτρια Αθήνα</title>
     <meta name="description" content="Η Σοφία Κοτσαλίδου είναι ψυχολόγος - ψυχοθεραπεύτρια στην Αθήνα, εφαρμόζοντας το Συνθετικό Μοντέλο Συστημικής Θεραπείας. Κλείστε το ραντεβού σας.">
     
+    <!-- Favicon -->
     <link rel="icon" href="https://github.com/agelmet/KOTSALIDOU/blob/main/logokotsa.jpg?raw=true" type="image/jpeg">
 
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <script>
@@ -96,18 +99,22 @@
         }
     </style>
 
+    <!-- Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body class="bg-white text-luxury-dark font-sans antialiased overflow-x-hidden selection:bg-luxury-blue selection:text-luxury-dark">
 
+    <!-- Navigation -->
     <nav class="fixed w-full z-50 transition-all duration-500 glass-nav" id="navbar">
         <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
             
+            <!-- Logo -->
             <a href="#" class="relative group block">
                 <div class="absolute -inset-2 bg-gradient-to-r from-luxury-light to-luxury-blue rounded-full blur opacity-0 group-hover:opacity-60 transition duration-500"></div>
                 <img src="https://github.com/agelmet/KOTSALIDOU/blob/main/logokotsa.jpg?raw=true" alt="Σοφία Κοτσαλίδου Logo" class="relative h-16 md:h-20 w-auto object-contain shadow-logo rounded-full transform group-hover:scale-105 transition-all duration-500">
             </a>
             
+            <!-- Desktop Menu -->
             <div class="hidden lg:flex items-center space-x-10">
                 <a href="#about" class="text-sm font-medium uppercase tracking-wider text-luxury-charcoal hover:text-luxury-blue transition-colors duration-300">Σχετικά</a>
                 <a href="#approach" class="text-sm font-medium uppercase tracking-wider text-luxury-charcoal hover:text-luxury-blue transition-colors duration-300">Προσέγγιση</a>
@@ -119,29 +126,35 @@
                 </a>
             </div>
 
+            <!-- Mobile Menu Toggle -->
             <button class="lg:hidden text-luxury-dark focus:outline-none" id="mobile-menu-btn" aria-label="Toggle Menu">
                 <i data-lucide="menu" class="w-8 h-8"></i>
             </button>
         </div>
         
-        <div id="mobile-menu" class="absolute top-full left-0 w-full bg-white/98 backdrop-blur-xl shadow-2xl hidden flex-col items-center py-10 space-y-8 border-t border-luxury-light/50">
-            <a href="#about" class="text-lg font-medium uppercase tracking-wider mobile-link text-luxury-dark">Σχετικά</a>
-            <a href="#approach" class="text-lg font-medium uppercase tracking-wider mobile-link text-luxury-dark">Προσέγγιση</a>
-            <a href="#services" class="text-lg font-medium uppercase tracking-wider mobile-link text-luxury-dark">Υπηρεσίες</a>
-            <a href="#contact" class="text-lg font-medium uppercase tracking-wider mobile-link text-luxury-dark">Επικοινωνία</a>
-            <a href="https://www.doctoranytime.gr/d/Psychologos/lamprinou-eua?autobook=1" target="_blank" rel="noopener noreferrer" class="px-8 py-4 bg-luxury-blue text-luxury-dark text-sm font-medium uppercase tracking-widest-luxe w-[80%] text-center mobile-link shadow-lg shadow-luxury-blue/30">
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="absolute top-full left-0 w-full bg-white shadow-2xl hidden flex-col items-center py-10 space-y-8 border-t border-luxury-light/50">
+            <a href="#about" class="text-lg font-bold uppercase tracking-wider mobile-link text-luxury-dark">Σχετικά</a>
+            <a href="#approach" class="text-lg font-bold uppercase tracking-wider mobile-link text-luxury-dark">Προσέγγιση</a>
+            <a href="#services" class="text-lg font-bold uppercase tracking-wider mobile-link text-luxury-dark">Υπηρεσίες</a>
+            <a href="#contact" class="text-lg font-bold uppercase tracking-wider mobile-link text-luxury-dark">Επικοινωνία</a>
+            <a href="https://www.doctoranytime.gr/d/Psychologos/lamprinou-eua?autobook=1" target="_blank" rel="noopener noreferrer" class="px-8 py-4 bg-luxury-blue text-luxury-dark text-sm font-bold uppercase tracking-widest-luxe w-[80%] text-center mobile-link shadow-lg shadow-luxury-blue/30">
                 Κλείστε Ραντεβού
             </a>
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <section class="relative h-screen flex items-center justify-center overflow-hidden">
+        <!-- Background Image with subtle zoom -->
         <div class="absolute inset-0 z-0">
             <div class="w-full h-full bg-cover bg-center animate-subtle-zoom" style="background-image: url('https://github.com/agelmet/KOTSALIDOU/blob/main/c93dbe3f-4212-438a-855a-1a80770bb60e.jpg?raw=true');"></div>
         </div>
         
+        <!-- Elegant Gradient Overlay for readability -->
         <div class="absolute inset-0 bg-gradient-to-b from-luxury-dark/40 via-luxury-dark/60 to-luxury-dark/80 z-10 mix-blend-multiply"></div>
         
+        <!-- Content -->
         <div class="relative z-20 text-center px-6 max-w-4xl mx-auto flex flex-col items-center justify-center h-full pt-20">
             <div class="reveal">
                 <span class="block text-luxury-light text-sm md:text-base tracking-widest-luxe uppercase mb-4 font-medium">Ψυχολόγος - Ψυχοθεραπεύτρια</span>
@@ -163,6 +176,7 @@
         </div>
     </section>
 
+    <!-- About Section -->
     <section id="about" class="py-24 md:py-32 px-6 bg-gradient-to-b from-white to-luxury-light/20 relative">
         <div class="absolute top-0 right-0 w-[40vw] h-[40vw] bg-luxury-blue/20 rounded-full blur-[100px] -translate-y-1/2 pointer-events-none"></div>
         <div class="absolute bottom-0 left-0 w-[30vw] h-[30vw] bg-luxury-light/40 rounded-full blur-[100px] pointer-events-none"></div>
@@ -170,11 +184,13 @@
         <div class="max-w-7xl mx-auto">
             <div class="grid lg:grid-cols-12 gap-16 items-start relative z-10">
                 
+                <!-- Sticky Left Column: Portrait -->
                 <div class="lg:col-span-5 lg:sticky top-32 h-[60vh] lg:h-[75vh] w-full reveal relative group">
                     <div class="absolute -inset-4 bg-gradient-to-tr from-luxury-light to-luxury-blue opacity-30 blur-2xl group-hover:opacity-60 transition duration-700"></div>
                     <img src="https://github.com/agelmet/KOTSALIDOU/blob/main/438102272_122117735636267416_1475123997204953088_n.jpg?raw=true" alt="Σοφία Κοτσαλίδου Portrait" class="w-full h-full object-cover object-top shadow-card relative z-10 grayscale-[20%] group-hover:grayscale-0 transition-all duration-1000 border border-white">
                 </div>
 
+                <!-- Scrolling Right Column: Text -->
                 <div class="lg:col-span-7 py-8 lg:py-16 space-y-10">
                     <div class="reveal">
                         <span class="text-luxury-blue font-semibold tracking-widest-luxe text-sm uppercase">Λιγα λογια για εμενα</span>
@@ -218,6 +234,7 @@
         </div>
     </section>
 
+    <!-- Approach Section -->
     <section id="approach" class="py-24 px-6 bg-gradient-to-br from-luxury-light to-luxury-blue relative overflow-hidden">
         <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-20 mix-blend-multiply"></div>
         <div class="absolute top-1/2 left-0 w-[50vw] h-[50vw] bg-white/30 rounded-full blur-[120px] -translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
@@ -246,6 +263,7 @@
         </div>
     </section>
 
+    <!-- Services Section -->
     <section id="services" class="py-24 md:py-32 px-6 bg-gradient-to-b from-luxury-light/10 to-luxury-blue/20 relative">
         <div class="max-w-7xl mx-auto relative z-10">
             <div class="text-center mb-20 reveal">
@@ -320,10 +338,12 @@
         </div>
     </section>
 
+    <!-- Footer / Contact Section -->
     <footer id="contact" class="bg-luxury-charcoal text-white pt-24 pb-12 relative border-t-[8px] border-luxury-blue">
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid lg:grid-cols-12 gap-16 mb-20">
                 
+                <!-- Brand Info -->
                 <div class="lg:col-span-5 reveal">
                     <h3 class="text-3xl font-serif mb-6 text-white tracking-wide">Σοφία Κοτσαλίδου</h3>
                     <p class="text-gray-400 font-light mb-8 max-w-sm leading-relaxed">
@@ -335,6 +355,7 @@
                     </a>
                 </div>
 
+                <!-- Contact Details -->
                 <div class="lg:col-span-4 reveal reveal-delay-1">
                     <h4 class="text-sm font-semibold text-luxury-light mb-8 uppercase tracking-widest-luxe">Επικοινωνια</h4>
                     <ul class="space-y-6 font-light text-gray-300">
@@ -351,7 +372,8 @@
                             <a href="mailto:sofiakotsa@hotmail.com" class="hover:text-white transition-colors text-lg tracking-wide">sofiakotsa@hotmail.com</a>
                         </li>
                         <li class="flex items-center gap-4">
-                            <i data-lucide="facebook" class="w-5 h-5 text-luxury-blue shrink-0"></i>
+                            <!-- New Facebook Icon -->
+                            <img src="https://raw.githubusercontent.com/agelmet/Image-hosting-/refs/heads/main/icons8-facebook-480.png" alt="Facebook Icon" class="w-6 h-6 object-contain shrink-0 filter brightness-200">
                             <a href="https://www.facebook.com/people/%CE%A3%CE%BF%CF%86%CE%AF%CE%B1-%CE%9A%CE%BF%CF%84%CF%83%CE%B1%CE%BB%CE%AF%CE%B4%CE%BF%CF%85/61558022499799/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">
                                 Ακολουθήστε με στο Facebook
                             </a>
@@ -359,6 +381,7 @@
                     </ul>
                 </div>
 
+                <!-- Schedule -->
                 <div class="lg:col-span-3 reveal reveal-delay-2">
                     <h4 class="text-sm font-semibold text-luxury-light mb-8 uppercase tracking-widest-luxe">Ωραριο Λειτουργιας</h4>
                     <div class="flex items-start gap-4 text-gray-300 font-light">
@@ -373,6 +396,7 @@
 
             </div>
 
+            <!-- Bottom Footer -->
             <div class="border-t border-gray-700/50 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 reveal">
                 <p class="text-gray-500 text-sm font-light uppercase tracking-wider">
                     &copy; 2026 Σοφια Κοτσαλιδου. All rights reserved.
@@ -384,6 +408,7 @@
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script>
         // Initialize Icons
         lucide.createIcons();
