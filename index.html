@@ -164,7 +164,7 @@
 
     <!-- Hero Section -->
     <section class="relative h-screen flex items-center justify-center overflow-hidden">
-        <!-- Background Image replaced -->
+        <!-- Background Image -->
         <div class="absolute inset-0 z-0">
             <div class="w-full h-full bg-cover bg-center bg-no-repeat animate-subtle-zoom" style="background-image: url('https://raw.githubusercontent.com/agelmet/KOTSALIDOU/refs/heads/main/kotsneed.png');"></div>
         </div>
@@ -203,46 +203,54 @@
     <section id="about" class="py-24 md:py-32 px-6 bg-gradient-to-b from-white to-luxury-light/20 relative">
         <div class="absolute top-0 right-0 w-[40vw] h-[40vw] bg-luxury-blue/20 rounded-full blur-[100px] -translate-y-1/2 pointer-events-none"></div>
 
-        <div class="max-w-5xl mx-auto relative z-10 flex flex-col items-center">
-            
-            <!-- About Text Centered -->
-            <div class="w-full space-y-10">
-                <div class="reveal">
-                    <!-- Title changed to black -->
-                    <h2 class="text-4xl md:text-5xl font-serif text-black mt-4 mb-8">Λίγα λόγια για εμένα</h2>
-                    
-                    <div class="space-y-6 text-luxury-charcoal font-light leading-relaxed text-lg mx-auto max-w-4xl text-center">
-                        <p>
-                            Είμαι η <strong>Σοφία Κοτσαλίδου</strong>, είμαι ψυχολόγος - ψυχοθεραπεύτρια, ζω και εργάζομαι στην Αθήνα και είμαι μητέρα δυο παιδιών. Είμαι απόφοιτη του τμήματος Ψυχολογίας του Πάντειου Πανεπιστημίου (BSc) στη διάρκεια του οποίου ολοκλήρωσα την πρακτική άσκηση στην ΑΜΚΕ Φαιναρέτη. Έχω άδεια ασκήσεως επαγγέλματος και είμαι τακτικό μέλος του ΣΕΨ (Συλλόγου Ελλήνων Ψυχολόγων).
-                        </p>
-                        <p>
-                            Έχοντας επιλέξει να εκπαιδευτώ στη Συστημική θεραπευτική προσέγγιση τετραετούς προγράμματος στο Εργαστήρι Διερεύνησης Ανθρωπίνων Σχέσεων (Χ. Κατάκη) και αποκτώντας πολύτιμες δεξιότητες για να ασχοληθώ με ένα ευρύ φάσμα ψυχολογικών προβλημάτων, το τελευταίο διάστημα εργάζομαι θεραπευτικά παρέχοντας ατομικές συνεδρίες σε ενήλικο πληθυσμό και εφήβους.
-                        </p>
-                    </div>
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="grid lg:grid-cols-12 gap-16 items-start relative z-10">
+                
+                <!-- Sticky Left Column: Portrait Brought Back -->
+                <div class="lg:col-span-5 lg:sticky top-32 h-[60vh] lg:h-[75vh] w-full reveal relative group">
+                    <div class="absolute -inset-4 bg-gradient-to-tr from-luxury-light to-luxury-blue opacity-30 blur-2xl group-hover:opacity-60 transition duration-700"></div>
+                    <img src="https://raw.githubusercontent.com/agelmet/KOTSALIDOU/refs/heads/main/438102272_122117735636267416_1475123997204953088_n.jpg" alt="Σοφία Κοτσαλίδου Portrait" class="w-full h-full object-cover object-top shadow-card relative z-10 grayscale-[20%] group-hover:grayscale-0 transition-all duration-1000 border border-white">
                 </div>
 
-                <div class="reveal">
-                    <div class="p-8 border-y border-luxury-blue/50 bg-white/40 shadow-sm backdrop-blur-md max-w-3xl mx-auto text-center">
-                        <p class="text-luxury-charcoal font-light leading-relaxed text-lg italic">
-                            "Οι εμπειρίες με δίδαξαν τη σημαντικότητα της δια βίου εκπαίδευσης και της συνεχούς προσωπικής αυτογνωστικής εργασίας από την πλευρά του θεραπευτή για να επιφέρει η ψυχοθεραπεία αποτελέσματα."
-                        </p>
+                <!-- Scrolling Right Column: Text -->
+                <div class="lg:col-span-7 py-8 lg:py-16 space-y-10 flex flex-col items-center">
+                    <div class="reveal w-full">
+                        <h2 class="text-4xl md:text-5xl font-serif text-black mt-4 mb-8">Λίγα λόγια για εμένα</h2>
+                        
+                        <div class="space-y-6 text-luxury-charcoal font-light leading-relaxed text-lg mx-auto text-center">
+                            <p>
+                                Είμαι η <strong>Σοφία Κοτσαλίδου</strong>, είμαι ψυχολόγος - ψυχοθεραπεύτρια, ζω και εργάζομαι στην Αθήνα και είμαι μητέρα δυο παιδιών. Είμαι απόφοιτη του τμήματος Ψυχολογίας του Πάντειου Πανεπιστημίου (BSc) στη διάρκεια του οποίου ολοκλήρωσα την πρακτική άσκηση στην ΑΜΚΕ Φαιναρέτη. Έχω άδεια ασκήσεως επαγγέλματος και είμαι τακτικό μέλος του ΣΕΨ (Συλλόγου Ελλήνων Ψυχολόγων).
+                            </p>
+                            <p>
+                                Έχοντας επιλέξει να εκπαιδευτώ στη Συστημική θεραπευτική προσέγγιση τετραετούς προγράμματος στο Εργαστήρι Διερεύνησης Ανθρωπίνων Σχέσεων (Χ. Κατάκη) και αποκτώντας πολύτιμες δεξιότητες για να ασχοληθώ με ένα ευρύ φάσμα ψυχολογικών προβλημάτων, το τελευταίο διάστημα εργάζομαι θεραπευτικά παρέχοντας ατομικές συνεδρίες σε ενήλικο πληθυσμό και εφήβους.
+                            </p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="reveal">
-                    <h3 class="text-2xl font-serif text-luxury-dark mb-4">Το Ασφαλές Πλαίσιο</h3>
-                    <div class="space-y-6 text-luxury-charcoal font-light leading-relaxed text-lg mx-auto max-w-4xl text-center">
-                        <p>
-                            Οι εξυπηρετούμενοι/ες θα έχουν την ευκαιρία να μιλήσουν για ένα πρόβλημα ή/και για συναισθηματικές δυσκολίες που τους απασχολούν σε ένα πλαίσιο αποδοχής, ασφάλειας, ενδιαφέροντος, εχεμύθειας, φροντίδας και με σεβασμό στη μοναδικότητα του κάθε ατόμου. Στόχος είναι να κατανοήσουν καλύτερα την επίδραση του προβλήματος στην καθημερινή τους ζωή και να επαναπροσδιορίσουν τη σχέση τους με αυτό.
-                        </p>
-                        <p>
-                            Η ψυχοθεραπεία είναι ένα ταξίδι στο βάθος του εαυτού. Εάν θες και εσύ να ξεκινήσεις το ταξίδι αυτογνωσίας σου, σε προσκαλώ να το κάνουμε μαζί γιατί <strong>αξίζεις να απολαύσεις τη ζωή με μεγαλύτερους βαθμούς ψυχικής ελευθερίας και χαράς.</strong>
-                        </p>
+                    <div class="reveal w-full">
+                        <div class="p-8 border-y border-luxury-blue/50 bg-white/40 shadow-sm backdrop-blur-md mx-auto text-center">
+                            <p class="text-luxury-charcoal font-light leading-relaxed text-lg italic">
+                                "Οι εμπειρίες με δίδαξαν τη σημαντικότητα της δια βίου εκπαίδευσης και της συνεχούς προσωπικής αυτογνωστικής εργασίας από την πλευρά του θεραπευτή για να επιφέρει η ψυχοθεραπεία αποτελέσματα."
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="reveal w-full">
+                        <h3 class="text-2xl font-serif text-luxury-dark mb-4">Το Ασφαλές Πλαίσιο</h3>
+                        <div class="space-y-6 text-luxury-charcoal font-light leading-relaxed text-lg mx-auto text-center">
+                            <p>
+                                Οι εξυπηρετούμενοι/ες θα έχουν την ευκαιρία να μιλήσουν για ένα πρόβλημα ή/και για συναισθηματικές δυσκολίες που τους απασχολούν σε ένα πλαίσιο αποδοχής, ασφάλειας, ενδιαφέροντος, εχεμύθειας, φροντίδας και με σεβασμό στη μοναδικότητα του κάθε ατόμου. Στόχος είναι να κατανοήσουν καλύτερα την επίδραση του προβλήματος στην καθημερινή τους ζωή και να επαναπροσδιορίσουν τη σχέση τους με αυτό.
+                            </p>
+                            <p>
+                                Η ψυχοθεραπεία είναι ένα ταξίδι στο βάθος του εαυτού. Εάν θες και εσύ να ξεκινήσεις το ταξίδι αυτογνωσίας σου, σε προσκαλώ να το κάνουμε μαζί γιατί <strong>αξίζεις να απολαύσεις τη ζωή με μεγαλύτερους βαθμούς ψυχικής ελευθερίας και χαράς.</strong>
+                            </p>
+                        </div>
                     </div>
                 </div>
+                
             </div>
-            
-            <!-- Replaced Business Card with 3 New Images & Lightbox Logic -->
+
+            <!-- Gallery / Lightbox Logic -->
             <div class="w-full mt-20 reveal reveal-delay-1">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <img src="https://raw.githubusercontent.com/agelmet/KOTSALIDOU/refs/heads/main/sp1.png" alt="Γραφείο 1" class="w-full h-80 object-cover rounded-xl shadow-lg cursor-pointer transform hover:scale-[1.02] transition-transform duration-500 border border-luxury-light" onclick="openLightbox(this.src)">
@@ -280,16 +288,22 @@
             <!-- Accordions -->
             <div class="reveal reveal-delay-1 w-full space-y-4">
                 
-                <!-- Accordion 1 -->
+                <!-- Accordion 1 (Updated with Bullets) -->
                 <details class="group glass-card rounded-xl overflow-hidden cursor-pointer">
                     <summary class="flex justify-between items-center p-6 font-serif text-2xl text-luxury-dark font-medium select-none">
                         <span class="mx-auto w-full text-center">Ρόλος μου στη διαδικασία</span>
                         <i data-lucide="chevron-down" class="w-6 h-6 shrink-0 transition-transform duration-300 group-open:rotate-180 absolute right-6"></i>
                     </summary>
-                    <div class="px-6 pb-6 text-luxury-charcoal font-light leading-relaxed text-lg text-center space-y-3">
-                        <p><strong>Δεν είμαι εδώ για να σας πω τι να κάνετε:</strong> Εσείς είστε οι ειδικοί της δικής σας ζωής.</p>
-                        <p><strong>Ουσιαστική ακρόαση & στήριξη:</strong> Στόχος μου είναι να δημιουργήσω έναν ασφαλή χώρο όπου θα ακουστείτε πραγματικά, χωρίς κριτική.</p>
-                        <p><strong>Ενδυνάμωση:</strong> Σας βοηθώ να οργανώσουμε τη θεραπευτική διαδρομή έτσι ώστε να ανακαλύψετε τα δικά σας εργαλεία και τη δική σας δύναμη.</p>
+                    <div class="px-6 pb-6 text-luxury-charcoal font-light leading-relaxed text-lg text-center space-y-4">
+                        <p>Πολλοί αναρωτιούνται αν ο ψυχολόγος είναι εκεί για να δώσει "συμβουλές" ή έτοιμες λύσεις. Στη δική μου προσέγγιση:</p>
+                        
+                        <div class="flex justify-center">
+                            <ul class="text-left space-y-3 inline-block max-w-2xl">
+                                <li>&bull; <strong>Δεν είμαι εδώ για να σας πω τι να κάνετε:</strong> Εσείς είστε οι ειδικοί της δικής σας ζωής.</li>
+                                <li>&bull; <strong>Ουσιαστική ακρόαση & στήριξη:</strong> Στόχος μου είναι να δημιουργήσω έναν ασφαλή χώρο όπου θα ακουστείτε πραγματικά, χωρίς κριτική.</li>
+                                <li>&bull; <strong>Ενδυνάμωση:</strong> Σας βοηθώ να οργανώσουμε τη θεραπευτική διαδρομή έτσι ώστε να ανακαλύψετε τα δικά σας εργαλεία και τη δική σας δύναμη.</li>
+                            </ul>
+                        </div>
                     </div>
                 </details>
 
